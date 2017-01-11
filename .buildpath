@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildpath>
+	<buildpathentry kind="src" path="_const"/>
+	<buildpathentry kind="src" path="back-end/Evenements"/>
+	<buildpathentry kind="src" path="classes/Database"/>
+	<buildpathentry kind="src" path="classes/Evenements"/>
+	<buildpathentry kind="src" path="front-end/Evenements"/>
+	<buildpathentry kind="con" path="org.eclipse.php.core.LANGUAGE"/>
+</buildpath>

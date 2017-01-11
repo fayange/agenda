@@ -1,0 +1,15 @@
+{
+	"dbType": "mysql",
+	"production": {
+		"host": "127.0.0.1",
+		"port": "3306",
+		"user": "toyafay",
+		"password": "pmolki90@j"
+	},
+	"developpement": {
+		"host": "127.0.0.1",
+		"port": "3306",
+		"user": "toyafay",
+		"password": "pmolki90@j"
+	}
+}
