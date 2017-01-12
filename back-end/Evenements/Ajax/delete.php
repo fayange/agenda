@@ -2,7 +2,7 @@
 /**
  * @name delete.php : Script appelé en Ajax permettant la suppression d'un événement
  **/
-require_once(dirname(__FILES__) . "../../../appLoader.php")
+require_once(dirname(__FILE__) . "/../../../appLoader.class.php");
 
 $clePrimaire = $_POST["idPost"];
 

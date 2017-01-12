@@ -6,28 +6,38 @@
 * @version 1.0
 * @see Intranet/Civilite/civiliteController.php
 **/
-/**
- * Charger le "loader" de l'application
- */
-require_once(dirname(__FILES__) . " ../../appLoader.php")
 
 #echo "controller.php";
 ini_set("display_errors", true);
 error_reporting(E_ALL);
 
+
+
+/**
+ * Charger le "loader" de l'application
+ */
+require_once(dirname(__FILE__) . "/../../appLoader.class.php");
+
+$appLoader = new appLoader();
+
+
+
+
 /**
 * 1. Importer les classes nécessaires pour le fonctionnement du contrôleur
 **/
-if(file_exists("../Evenements/modele/helper/dateHelper.class.php"))
-	require("../Evenements/modele/helper/dateHelper.class.php");
-else 
-	echo "le fichier n'existe pas" . $_SERVER['PHP_SELF'];
+#if(file_exists("../Evenements/modele/helper/dateHelper.class.php"))
+	#require("../Evenements/modele/helper/dateHelper.class.php");
+#else
+	#echo "le fichier n'existe pas" . $_SERVER['PHP_SELF'];
 
 
-if(file_exists("../Evenements/modele/evenements.class.php"))
-	require("../Evenements/modele/evenements.class.php");
-else
-	echo "le fichier2 n'existe pas" . $_SERVER['PHP_SELF'];
+#if(file_exists("../Evenements/modele/evenements.class.php"))
+	#require("../Evenements/modele/evenements.class.php");
+#else
+	#echo "le fichier2 n'existe pas" . $_SERVER['PHP_SELF'];
+
+
 
 
 //echo dateHelper::toFrDate("2016-12-03", "d-m-Y", true);

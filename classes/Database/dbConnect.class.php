@@ -7,12 +7,12 @@
 /**
 * Requiert le fichier qui contient les constantes d'informations de connexion
 **/
-require("/../../_const/dbConfig.class.php");
-
-require("/../../classes/Database/Connexion.class.php");
-require("/../../classes/Database/MySQL.class.php");
-require("/../../classes/Database/PostgreSQL.class.php");
-require("/../../classes/Database/Oracle.class.php");
+//require("/../../_const/dbConfig.class.php");
+//
+//require("/../../classes/Database/Connexion.class.php");
+//require("/../../classes/Database/MySQL.class.php");
+//require("/../../classes/Database/PostgreSQL.class.php");
+//require("/../../classes/Database/Oracle.class.php");
 
 class dbConnect{
 	/**

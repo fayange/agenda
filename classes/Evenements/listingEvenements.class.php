@@ -7,8 +7,8 @@
  * @author Stéphanie CAUMONT - 2016 - 2017
 **/
 
-require("../Database/dbConnectConfig.class.php");
-require_once("DefinitionsEvenement.class.php");
+//require("../Database/dbConnectConfig.class.php");
+//require_once("DefinitionsEvenement.class.php");
 
 class listingEvenements extends DefinitionsEvenement{
 	

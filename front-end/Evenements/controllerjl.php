@@ -14,11 +14,19 @@ ini_set("display_errors", true);
 error_reporting(E_ALL);
 
 
+/**
+ * Charger le "loader" de l'application
+ */
+require_once(dirname(__FILE__) . "/../../appLoader.class.php");
 
-include("../../classes/Evenements/DefinitionsEvenement.class.php");
-include("../../classes/Evenements/EvenementPrive.class.php");
-include("../../classes/Evenements/EvenementPublic.class.php");
-include("../../classes/Evenements/listingEvenements.class.php");
+$appLoader = new appLoader();
+
+
+
+//include("../../classes/Evenements/DefinitionsEvenement.class.php");
+//include("../../classes/Evenements/EvenementPrive.class.php");
+//include("../../classes/Evenements/EvenementPublic.class.php");
+//include("../../classes/Evenements/listingEvenements.class.php");
 
 /**
 * Cette classe va permettre de "collectionner" les événements
@@ -39,7 +47,7 @@ include("../../classes/Evenements/listingEvenements.class.php");
 *	Créer un objet (EvenementPublic ou EvenementPrive) en fonction de la valeur de la colonne type
 *	Ajouter l'objet créé à la collection des objets de l'agenda @see agenda::addEvenement()
 **/
-$events = new ListingEvenements;
+$events = new listingEvenements;
 //$events->select();
 
 if(isset($_GET["type"])&& $_GET["type"] == "public"){	
